@@ -2,18 +2,67 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mainBgColor"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:background="@color/asideBgColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/journal"
+                    android:layout_width="120dp"
+                    android:layout_height="145dp"
+                    android:layout_marginBottom="200dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:rotation="270"
+                    android:text="@string/journal_text"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/basket"
+                    android:layout_width="120dp"
+                    android:layout_height="145dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:rotation="270"
+                    android:text="@string/basket_text"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/journal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.49"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/main_scene"
+                    android:layout_width="120dp"
+                    android:layout_height="145dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:rotation="270"
+                    android:text="@string/main_scene_text"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/basket"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.472"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="TextSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

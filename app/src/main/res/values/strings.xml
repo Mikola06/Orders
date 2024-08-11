@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Orders</string>
+    <string name="products">Товары</string>
+    <string name="main_scene_text">Главная</string>
+    <string name="basket_text">Корзина</string>
+    <string name="journal_text">Журнал</string>
 </resources>
